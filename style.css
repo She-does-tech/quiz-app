@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 30px 50px;
+}

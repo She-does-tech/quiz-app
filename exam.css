@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #3498db;
+    --page-button-color:#3c4d67;
+    --secondary-color: #2ecc71;
+    --background-color: #06217c;
+    --text-color: #fff;
+    --code-background-color:#FFF1E8;
+    --code-color: #fdc2a3;
+    --css-background-color:#e0fdf0;
+    --css-color:#84e7bb;
+    --font-family: "Tagesschrift", system-ui;
+}
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+main{
+    width: 50%;
+    padding: 40px;
+    background-color: var(--primary-color);
+}
+.quiz, section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.correct {
+    background: #28a745 !important;
+}
+.wrong {
+    background: #dc3545 !important;
+}
+main button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+main button:hover{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+.result {
+    display: none;
+}
